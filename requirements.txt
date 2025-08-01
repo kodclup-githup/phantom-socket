@@ -1,0 +1,183 @@
+# Phantom Socket Premium v2.0 - Requirements
+# Eğitim amaçlı geliştirilmiş port tarama aracı
+# Geliştirici: KodClup
+
+# Core Python Libraries (Genellikle Python ile birlikte gelir)
+# Bu kütüphaneler standart Python kurulumunda bulunur
+# socket - Ağ bağlantıları için
+# threading - Çoklu thread desteği için  
+# time - Zaman işlemleri için
+# sys - Sistem işlemleri için
+# json - JSON veri işleme için
+# os - İşletim sistemi işlemleri için
+# datetime - Tarih/saat işlemleri için
+# subprocess - Alt süreç yönetimi için
+# re - Düzenli ifadeler için
+
+# Concurrent Futures (Python 3.2+ ile birlikte gelir)
+# concurrent.futures - Paralel işlem yönetimi için
+
+# Ek Kütüphaneler (Gerekirse kurulacak)
+# Bu kütüphaneler bazı sistemlerde eksik olabilir
+
+# Colorama - Windows'ta renkli terminal çıktısı için
+colorama>=0.4.4
+
+# Requests - HTTP istekleri için (gelişmiş banner grabbing)
+requests>=2.25.1
+
+# Python-nmap - Nmap entegrasyonu için (opsiyonel)
+python-nmap>=0.6.1
+
+# Scapy - Gelişmiş ağ paket analizi için (opsiyonel)
+# scapy>=2.4.5
+
+# Tabulate - Tablo formatında çıktı için (opsiyonel)
+tabulate>=0.8.9
+
+# Rich - Gelişmiş terminal çıktısı için (opsiyonel)
+rich>=10.0.0
+
+# Click - Komut satırı arayüzü için (opsiyonel)
+click>=8.0.0
+
+# Tqdm - İlerleme çubuğu için (opsiyonel)
+tqdm>=4.60.0
+
+# Psutil - Sistem bilgileri için (opsiyonel)
+psutil>=5.8.0
+
+# Netifaces - Ağ arayüzü bilgileri için (opsiyonel)
+netifaces>=0.11.0
+
+# Platform Specific Requirements
+# Windows için ek gereksinimler
+# pywin32>=227; sys_platform == "win32"
+
+# Linux için ek gereksinimler  
+# python3-dev; sys_platform == "linux"
+
+# Termux için ek gereksinimler
+# termux-api; sys_platform == "linux" and "TERMUX_VERSION" in os.environ
+
+# Development Dependencies (Geliştirme için)
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.8.0
+# mypy>=0.812
+
+# Security Dependencies (Güvenlik için)
+# cryptography>=3.4.8
+# pycryptodome>=3.10.1
+
+# Network Analysis Dependencies (Ağ analizi için)
+# dnspython>=2.1.0
+# ipaddress>=1.0.23
+# netaddr>=0.8.0
+
+# Reporting Dependencies (Raporlama için)
+# jinja2>=3.0.0
+# matplotlib>=3.3.0
+# pandas>=1.3.0
+
+# Database Dependencies (Veritabanı için)
+# sqlite3 (Python ile birlikte gelir)
+# sqlalchemy>=1.4.0
+
+# Configuration Dependencies (Yapılandırma için)
+# configparser (Python ile birlikte gelir)
+# pyyaml>=5.4.0
+# toml>=0.10.2
+
+# Logging Dependencies (Loglama için)
+# logging (Python ile birlikte gelir)
+# loguru>=0.5.3
+
+# Threading Dependencies (Threading için)
+# queue (Python ile birlikte gelir)
+# multiprocessing (Python ile birlikte gelir)
+
+# Error Handling Dependencies (Hata yönetimi için)
+# traceback (Python ile birlikte gelir)
+# sys (Python ile birlikte gelir)
+
+# File Handling Dependencies (Dosya işlemleri için)
+# pathlib (Python 3.4+ ile birlikte gelir)
+# glob (Python ile birlikte gelir)
+# shutil (Python ile birlikte gelir)
+
+# Minimum Python Version Check
+# python_requires>=3.6
+
+# Installation Notes:
+# 1. Bu dosyayı kullanarak bağımlılıkları kurmak için:
+#    pip install -r requirements.txt
+#
+# 2. Sadece temel bağımlılıkları kurmak için:
+#    pip install colorama requests
+#
+# 3. Tüm opsiyonel bağımlılıkları kurmak için:
+#    pip install -r requirements.txt
+#
+# 4. Geliştirme bağımlılıklarını kurmak için:
+#    pip install -r requirements.txt pytest black flake8
+#
+# 5. Belirli bir platform için kurmak için:
+#    pip install -r requirements.txt --platform win32
+#
+# Platform Specific Installation:
+#
+# Windows:
+# pip install -r requirements.txt
+# pip install pywin32
+#
+# Linux:
+# pip3 install -r requirements.txt
+# sudo apt-get install python3-dev
+#
+# Termux:
+# pkg install python
+# pip install -r requirements.txt
+# pkg install termux-api
+#
+# macOS:
+# pip3 install -r requirements.txt
+# brew install python3-dev
+
+# Version Compatibility:
+# Python 3.6+: Tüm özellikler desteklenir
+# Python 3.7+: Önerilen versiyon
+# Python 3.8+: En iyi performans
+# Python 3.9+: Gelişmiş özellikler
+# Python 3.10+: En son özellikler
+
+# Memory Requirements:
+# Minimum: 512MB RAM
+# Önerilen: 1GB RAM
+# Optimal: 2GB+ RAM
+
+# Disk Space Requirements:
+# Minimum: 100MB
+# Önerilen: 500MB
+# Optimal: 1GB+
+
+# Network Requirements:
+# İnternet bağlantısı (bağımlılık indirme için)
+# Ağ erişimi (tarama için)
+# DNS çözümleme (domain tarama için)
+
+# Security Notes:
+# Bu araç sadece eğitim amaçlıdır
+# Yetkisiz sistemlerde kullanmayın
+# Yasal sorumluluğu kabul edin
+# Etik kurallara uyun
+
+# Support:
+# GitHub: https://github.com/kodclup/phantom-socket
+# Email: info@kodclup.com
+# Website: https://kodclup.com
+
+# License:
+# Educational License
+# Sadece eğitim amaçlı kullanım
+# Ticari kullanım yasaktır
